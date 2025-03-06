@@ -1,46 +1,113 @@
-# Getting Started with Create React App
+# Sorting Algorithm Visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A visual representation of how different sorting algorithms work, built with React and TypeScript.
 
-## Available Scripts
+![Sorting Algorithm Visualizer](https://via.placeholder.com/800x400?text=Sorting+Algorithm+Visualizer)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Interactive Visualization**: Watch sorting algorithms in action with animated bars
+- **Multiple Algorithms**: Includes six different sorting algorithms:
+  - Bubble Sort
+  - Selection Sort
+  - Insertion Sort
+  - Merge Sort
+  - Quick Sort
+  - Heap Sort
+- **Customizable**: Adjust array size and sorting speed
+- **Color-Coded**: Different colors indicate the current state of each element (comparing, swapping, sorted)
+- **Responsive Design**: Works on desktop and mobile devices
+- **Algorithm Information**: Displays time complexity and description for each algorithm
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Sorting Algorithms
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Bubble Sort
+- **Time Complexity**: O(n²)
+- **Description**: Repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.
 
-### `npm test`
+### Selection Sort
+- **Time Complexity**: O(n²)
+- **Description**: Divides the input list into two parts: a sorted sublist and an unsorted sublist. It repeatedly selects the smallest element from the unsorted sublist and moves it to the end of the sorted sublist.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Insertion Sort
+- **Time Complexity**: O(n²)
+- **Description**: Builds the sorted array one item at a time by repeatedly taking the next element and inserting it into its correct position in the already sorted part of the array.
 
-### `npm run build`
+### Merge Sort
+- **Time Complexity**: O(n log n)
+- **Description**: Divides the array into halves, sorts them recursively, and then merges the sorted halves.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Quick Sort
+- **Time Complexity**: Average O(n log n), Worst O(n²)
+- **Description**: Selects a 'pivot' element and partitions the array around the pivot, with elements less than the pivot on the left and greater on the right. It then recursively sorts the sub-arrays.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Heap Sort
+- **Time Complexity**: O(n log n)
+- **Description**: Builds a max heap from the array and repeatedly extracts the maximum element from the heap, placing it at the end of the array.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used
 
-### `npm run eject`
+- **React.js**: Frontend library for building user interfaces
+- **TypeScript**: Adds static typing to JavaScript
+- **CSS-in-JS**: Inline styles for component styling
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Getting Started
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Node.js (v14 or higher)
+- npm or yarn
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Installation
 
-## Learn More
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/sorting-visualizer.git
+cd sorting-visualizer
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Start the development server:
+```bash
+npm start
+# or
+yarn start
+```
+
+4. Open your browser and navigate to `http://localhost:3000`
+
+## Usage
+
+1. Use the slider to adjust the number of elements in the array (5-100)
+2. Select a sorting algorithm from the dropdown menu:
+   - Bubble Sort
+   - Selection Sort
+   - Insertion Sort
+   - Merge Sort
+   - Quick Sort
+   - Heap Sort
+3. Choose a sorting speed (slow, medium, fast)
+4. Click "Randomize" to generate a new random array
+5. Click "Sort" to start the sorting visualization
+
+## Color Legend
+
+- **Blue**: Unsorted elements
+- **Yellow**: Elements being compared
+- **Red**: Elements being swapped
+- **Green**: Sorted elements
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Inspired by various sorting visualizers across the web
+- Built as a learning project to understand sorting algorithms and React
