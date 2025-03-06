@@ -2,7 +2,7 @@
 
 A visual representation of how different sorting algorithms work, built with React and TypeScript.
 
-![Sorting Algorithm Visualizer](https://via.placeholder.com/800x400?text=Sorting+Algorithm+Visualizer)
+![Sorting Algorithm Visualizer](https://github.com/user-attachments/assets/18216fcc-0b88-4c4b-a6b7-7f6e3e99b1ff)
 
 ## Features
 
